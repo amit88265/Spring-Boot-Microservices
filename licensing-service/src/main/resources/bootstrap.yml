@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: licensingservice
+  profiles:
+    active: dev
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8888
+#      label: master // change it when your props are in different branch
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 8000
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:7878/user

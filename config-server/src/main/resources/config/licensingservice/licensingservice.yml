@@ -1,0 +1,14 @@
+##---
+##management:
+##  endpoints:
+##    web:
+##      exposure:
+##        include: "*"
+#spring:
+#  jpa:
+#    show-sql: "true"
+#tracer:
+#  property: "I AM THE Default"
+#
+#my:
+#  value: "DEFAULT"
